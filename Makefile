@@ -1,8 +1,8 @@
-LCDPROC_VER=0.5.4
+LCDPROC_VER=0.5.7
 LCDPROC_DIR=lcdproc-$(LCDPROC_VER)-pre1
 LCDPROC_DST=$(PWD)/lcdproc-target
 LCDPROC_TGZ=$(LCDPROC_DIR).tar.gz
-LCDPROC_URL=http://$(SF_MIRROR).dl.sourceforge.net/project/lcdproc/lcdproc/$(LCDPROC_VER)/$(LCDPROC_TGZ)
+LCDPROC_URL=https://sourceforge.net/projects/lcdproc/files/lcdproc/$(LCDPROC_VER)/$(LCDPROC_TGZ)/download
 
 SF_MIRROR=switch
 
@@ -39,4 +39,4 @@ $(LCDPROC_DIR)/configure: $(LCDPROC_TGZ)
 	ln -s ../../../ax89063.h $(LCDPROC_DIR)/server/drivers/
 
 $(LCDPROC_TGZ):
-	wget "$(LCDPROC_URL)"
+	wget -O $(LCDPROC_TGZ) "$(LCDPROC_URL)"
