@@ -4,8 +4,6 @@ LCDPROC_DST=$(PWD)/lcdproc-target
 LCDPROC_TGZ=$(LCDPROC_DIR).tar.gz
 LCDPROC_URL=https://sourceforge.net/projects/lcdproc/files/lcdproc/$(LCDPROC_VER)/$(LCDPROC_TGZ)/download
 
-SF_MIRROR=switch
-
 AUTOCONF=autoconf
 AUTOMAKE=automake
 
